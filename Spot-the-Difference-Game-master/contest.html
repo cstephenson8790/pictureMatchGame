@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Spot the Difference Game</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<!-- Call Jquery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!-- Clicking in image map areas -->
+<script type="text/javascript">
+$(document).ready(function() {
+    // When clicked, show difference
+	$('#transparentmap AREA').click(function() {
+	var theDifference = '#'+$(this).attr('id')+'-diff';
+	$(theDifference).css('display', 'inline');
+    $(theDifference).data('clicked', true);
+
+	// When all differences selected/clicked, show email submission form
+	if($('#one-diff').data('clicked') && $('#two-diff').data('clicked') && $('#three-diff').data('clicked') && $('#four-diff').data('clicked') && $('#five-diff').data('clicked')
+	&& $('#six-diff').data('clicked') && $('#seven-diff').data('clicked') && $('#eight-diff').data('clicked') && $('#nine-diff').data('clicked') && $('#ten-diff').data('clicked')) {
+		$('#form_container').css('display', 'inline');
+	}
+
+	});
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="different"></div>
+<div id="transparentmap">
+		<img class="transparentmap" src="contest_files/transparentmap.png" usemap="#photohunt" />
+		<map name="photohunt">
+			<area id="one" shape ="rect" coords="62, 548, 141, 601" />
+			<area id="two" shape ="rect" coords="215, 515, 244, 601" />
+			<area id="three" shape ="rect" coords="185, 284, 244, 361" />
+			<area id="four" shape ="rect" coords="16, 417, 81, 462" />
+			<area id="five" shape ="rect" coords="44, 86, 65, 167" />
+			<area id="six" shape ="rect" coords="346, 18, 368, 69" />
+			<area id="seven" shape ="rect" coords="236, 197, 295, 257" />
+			<area id="eight" shape ="rect" coords="251, 488, 270, 516" />
+			<area id="nine" shape ="rect" coords="182, 150, 203, 212" />
+			<area id="ten" shape ="rect" coords="55, 8, 76, 89" />
+		</map>
+	</div><!-- end transparent map -->
+		<div id="one-diff"></div>
+		<div id="two-diff"></div>
+		<div id="three-diff"></div>
+		<div id="four-diff"></div>
+		<div id="five-diff"></div>
+		<div id="six-diff"></div>
+		<div id="seven-diff"></div>
+		<div id="eight-diff"></div>
+		<div id="nine-diff"></div>
+		<div id="ten-diff"></div>
+		<h1>Spot the Difference Game</h1>
+				<div id="original">
+<p>Can you spot the differences?  Click on all five of them in the picture on the right to be entered to win.</p><br />
+<img src="contest_files/HD_PhotoHunt_Before_0001_sm.jpg">
+		</div><!-- end original -->
+	<form method="post" action="sendEmail.php">
+<div id="form_container">
+
+	<h1>Congratulations! You found all 10!</h1>
+	Submit your email address to be entered to win.<br />
+		<p><small>Email Address:</small> <input type="text" name="email" id="email" /></p>
+		<br /><p><input type="submit" name="submit" id="submit" value="Submit" /></p>
+		<ul id="response" />
+	</div><!--end main -->
+
+</div><!-- end form container -->
+</form>
+</div></div><!-- end pagebg and main -->
+</body>
+</html>
