@@ -9,6 +9,10 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <!-- Clicking in image map areas -->
 <script type="text/javascript">
+
+ .mobil-click-element {
+        pointer:cursor;
+    }
 $(document).ready(function() {
     // When clicked, show difference
 	$('#transparentmap AREA').click(function() { 
@@ -28,7 +32,7 @@ $(document).ready(function() {
 <body>
 <div id="wrapper">
 <div id="different"></div>
-<div id="transparentmap">
+<div class="mobil-click-element" id="transparentmap">
 		<img class="transparentmap" src="contest_files/transparentmap.png" usemap="#photohunt" />
 		<map name="photohunt">
 			<area id="leaf" shape ="rect" coords="66, 95, 79, 111" />
