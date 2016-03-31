@@ -1,9 +1,9 @@
-#different {position: absolute;background: url(contest_files/HD_PhotoHunt_After_0001_sm.jpg) no-repeat top left;width:140px;height:140px;left:170px;z-index:0;}
-#leaf-diff {position:absolute;background: url(contest_files/leaf.png) no-repeat top left;width:140px;height:140px;left:800px;z-index:1;display: none;}
-#light-diff {position:absolute;background: url(contest_files/light.png) no-repeat top left;width:140px;height:140px;left:800px;display:none;z-index:1;}
-#nolight-diff {position:absolute;background: url(contest_files/nolight.png) no-repeat top left;width:140px;height:140px;left:800px;display:none;z-index:1;}
-#sauce-diff {position:absolute;background: url(contest_files/sauce.png) no-repeat top left;width:140px;height:140px;left:800px;display:none;z-index:1;}
-#petal-diff {position:absolute;background: url(contest_files/petal.png) no-repeat top left;width:140px;height:140px;left:800px;display:none;z-index:1;}
+#different {position: absolute;background: url(contest_files/HD_PhotoHunt_After_0001_sm.jpg) no-repeat top left;width:170px;height:170px;left:200px;z-index:0;}
+#leaf-diff {position:absolute;background: url(contest_files/leaf.png) no-repeat top left;width:170px;height:170px;left:800px;z-index:1;display: none;}
+#light-diff {position:absolute;background: url(contest_files/light.png) no-repeat top left;width:170px;height:170px;left:800px;display:none;z-index:1;}
+#nolight-diff {position:absolute;background: url(contest_files/nolight.png) no-repeat top left;width:170px;height:170px;left:800px;display:none;z-index:1;}
+#sauce-diff {position:absolute;background: url(contest_files/sauce.png) no-repeat top left;width:170px;height:170px;left:800px;display:none;z-index:1;}
+#petal-diff {position:absolute;background: url(contest_files/petal.png) no-repeat top left;width:170px;height:170px;left:800px;display:none;z-index:1;}
 #transparentmap {z-index:9999;position: absolute;left:800px;}
 
 a:link {text-decoration: none;}
